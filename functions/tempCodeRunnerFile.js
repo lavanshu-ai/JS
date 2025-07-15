@@ -1,1 +1,1 @@
-` users name is ${obj.name} and has ${obj.owns}`
+ this
