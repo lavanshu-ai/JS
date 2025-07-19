@@ -5,3 +5,7 @@ arr.forEach((Val,idx,a)=>{
 arr.forEach(function(Val,idx,a){
     console.log(`at ${idx} index in [${a}] the value is ${Val}`);
 })
+const narr=arr.filter(function(num){
+    return num>90
+})
+console.log(narr)
