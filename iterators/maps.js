@@ -10,3 +10,9 @@ for(const val in arr){
 
     }
 }
+for(const val of arr){
+    if(val>20){
+        console.log(`value is greater than 20 i.e ${val}`)
+
+    }
+}
