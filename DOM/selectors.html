@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div> <h1 id="heading" , style="color:cornflowerblue">  Testing different selector to manipulate DOM <span style="display:none">teting theories</span></h1></div>
+    
+    <div class="far">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit, laborum perferendis repudiandae vero hic et
+         quaerat unde cum ipsum.   </div>
+       <ul class="language">
+        <li>hindi </li>
+        <li>english </li>
+        <li>urdu </li>
+        <li>turkish </li>
+       </ul> 
+       <script>
+        function addlang(lang){
+         const li=document.createElement('li')
+         li.innerHTML=lang
+         document.querySelector('.language').appendChild(li)
+        }
+        addlang("java")
+        addlang("python")
+        addlang("c")
+
+
+       </script> 
+</body>
+</html>
