@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>The only truth</h1>
+    <button id="start">start</button>
+    <button id="stop">bhaap</button>
+    <script>
+        const trust=function(){
+              const h3 = document.createElement('h3');
+              h3.textContent = 'kinnu gadha';
+              document.body.appendChild(h3);
+        }
+        const start = document.getElementById('start')
+        const stop = document.getElementById('stop')
+        let repet;
+        start.addEventListener('click',function(){
+               repet= setInterval(trust,1000)
+             
+        })
+         stop.addEventListener('click',function(){
+                clearInterval(repet)
+              })
+        
+
+
+    </script>
+</body>
+</html>
