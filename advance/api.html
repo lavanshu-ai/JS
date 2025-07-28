@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const requestUrl='https://api.github.com/users/lavanshu-ai'
+        const xhr=new XMLHttpRequest()
+        console.log('Current readyState:',xhr.status);
+        xhr.open('GET',requestUrl)
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) { // Request is complete
+                console.log('current readyState:', xhr.readyState);
+                const data=JSON.parse(this.responseText);
+                 const userName = data.login;
+                 const imageUrl = data.avatar_url;
+                 const userId = data.id;
+                 document.body.innerHTML = `
+                    <h1>User Information</h1>
+                    <div class="user-info" style=" border: 4px solid black; padding: 10px;">
+                    <img src="${imageUrl}" alt="User Avatar" style="width: 100px; height: 100px;">
+
+                    <p><strong>Username:</strong> ${userName}</p>
+                    <p><strong>User ID:</strong> ${userId}</p></div`
+                    document.body.style.textAlign = 'center';
+                   
+                    
+            } else {
+                console.log('Current readyState:', xhr.readyState);
+            }
+        };
+        xhr.send();
+        console.log("Current readyState:",xhr.readyState);
+    </script>
+    
+</body>
+</html>
