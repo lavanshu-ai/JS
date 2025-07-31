@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="orange">Orange</button>
+    <button id="green">green</button>
+    <script>
+        function changeBg(color){
+            return function(){
+                document.body.style.backgroundColor = color;
+            }
+        }
+        document.getElementById("orange").onclick= changeBg("orange");
+        document.getElementById("green").onclick= changeBg("green");
+        // The changeBg function returns another function that changes the background color
+    </script>
+    
+</body>
+</html>
