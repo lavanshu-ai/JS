@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Racing Cars</h1>
+    <button>service required</button>
+ <script>
+  class rc{
+    constructor(carname, model, year) {
+        this.carname = "Mustang";
+        this.model = "GT";
+        this.year = "1969";
+        document.querySelector('button').addEventListener('click', this.service.bind(this));
+    }
+    service() {
+        console.log(`Servicing required for your car`);
+        console.log(`Car Name: ${this.carname}`);
+        console.log(`Model: ${this.model}`);   
+        console.log(`Year: ${this.year}`);  
+        console.log(this) 
+    }
+  }
+  const car = new rc();
+</script>   
+</body>
+</html>
+
