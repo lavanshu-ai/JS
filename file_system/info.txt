@@ -1,0 +1,2 @@
+This is a sample text file for file system operations in JavaScript.
+You can add, read, or modify this content using Node.js or other tools.

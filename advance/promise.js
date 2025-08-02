@@ -50,4 +50,4 @@ promiseTwo.then((user)=>{
     console.log('Something went Wrong:', error);
 })
 .finally(()=>{
-    console.log('Promise is sstteled or rejected');})
+    console.log('Promise is settled or rejected');})
